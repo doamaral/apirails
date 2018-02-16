@@ -12,6 +12,19 @@ gem 'rails', '~> 5.1.4'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+# Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible.
+gem 'rack-cors'
+# Rack middleware for blocking & throttling
+gem 'rack-attack'
+# Flexible authentication solution for Rails with Warden.
+gem 'devise'
+# Simple (but safe) token authentication for Rails apps or API with Devise.
+gem 'simple_token_authentication', '~> 1.0'
+
+#gem 'bcrypt', '~> 3.1.11'
+#gem 'bcrypt', '3.1.11', platforms: [:ruby, :x64_mingw]
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
