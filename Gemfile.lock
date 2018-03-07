@@ -4,6 +4,14 @@ GIT
   specs:
     bcrypt (3.1.11)
 
+GIT
+  remote: https://github.com/stympy/faker.git
+  revision: 679fd508c9f41f41b6df62024d67bc2281953395
+  branch: master
+  specs:
+    faker (1.8.7)
+      i18n (>= 0.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -60,6 +68,7 @@ GEM
       activesupport (>= 4.2.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
+    lerolero_generator (1.0.1)
     loofah (2.2.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -73,6 +82,7 @@ GEM
     nokogiri (1.8.2-x64-mingw32)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
+    pg (1.0.0-x64-mingw32)
     puma (3.11.2)
     rack (2.0.4)
     rack-attack (5.0.1)
@@ -138,6 +148,9 @@ DEPENDENCIES
   bcrypt!
   byebug
   devise
+  faker!
+  lerolero_generator
+  pg
   puma (~> 3.7)
   rack-attack
   rack-cors
