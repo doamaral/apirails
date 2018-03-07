@@ -58,7 +58,7 @@ GEM
       railties (>= 4.1.0, < 5.2)
       responders
       warden (~> 1.2.3)
-    erubi (1.7.0)
+    erubi (1.7.1)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (0.9.5)
@@ -78,12 +78,12 @@ GEM
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
     pg (1.0.0-x64-mingw32)
-    puma (3.11.2)
+    puma (3.11.3)
     rack (2.0.4)
     rack-attack (5.0.1)
       rack
     rack-cors (1.0.2)
-    rack-test (0.8.2)
+    rack-test (0.8.3)
       rack (>= 1.0, < 3)
     rails (5.1.5)
       actioncable (= 5.1.5)
@@ -138,6 +138,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   byebug
