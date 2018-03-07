@@ -34,8 +34,6 @@ end
 group :production do
   #Postgres gem
   gem 'pg'
-  #gem 'bcrypt', '~> 3.1.11'
-  #gem 'bcrypt', '3.1.11', platforms: [:ruby, :x64_mingw]
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
