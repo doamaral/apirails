@@ -34,7 +34,7 @@ end
 group :production do
   #Postgres gem
   gem 'pg'
-  gem 'bcrypt', '~> 3.1.11'
+  #gem 'bcrypt', '~> 3.1.11'
   #gem 'bcrypt', '3.1.11', platforms: [:ruby, :x64_mingw]
 end
 
