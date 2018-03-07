@@ -1,5 +1,18 @@
 language: ruby
 rvm:
   - 2.4.2
+
+install:
+  - bundle install
+  - nvm install node
+  - node -v
+  - npm install newman
+
+before_script:
+  - node --version
+  - npm --version
+  - node_modules/.bin/newman --version
+
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - node_modules/.bin/newman run test/test_api.postman_collection.json
