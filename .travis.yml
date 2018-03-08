@@ -15,4 +15,4 @@ before_script:
 
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
-  - node_modules/.bin/newman run test/test_api.postman_collection.json
+  - node_modules/.bin/newman run test/test_api.postman_collection.json -e test\Production.postman_environment.json

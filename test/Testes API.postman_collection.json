@@ -56,11 +56,10 @@
 					]
 				},
 				"url": {
-					"raw": "localhost:3000/api/v1/contacts/1",
+					"raw": "{{URL}}/api/v1/contacts/1",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"v1",
@@ -72,7 +71,7 @@
 			},
 			"response": [
 				{
-					"id": "cc661a81-df37-432b-8578-1394b1df27e0",
+					"id": "eb72052c-b406-4ad1-a52e-8e1968198108",
 					"name": "GET Contact By Id",
 					"originalRequest": {
 						"method": "GET",
@@ -216,11 +215,11 @@
 					},
 					{
 						"key": "X-User-Email",
-						"value": "john@doe.com"
+						"value": "{{EMAIL}}"
 					},
 					{
 						"key": "X-User-Token",
-						"value": "sEY2sTxSMRy_tB1RSJdV"
+						"value": "{{AUTH_TOKEN}}"
 					}
 				],
 				"body": {
@@ -241,197 +240,9 @@
 					]
 				},
 				"url": {
-					"raw": "localhost:3000/api/v1/contacts/1",
+					"raw": "{{URL}}/api/v1/contacts/1",
 					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"contacts",
-						"1"
-					]
-				},
-				"description": "Carregar contato com o id especificado na URL"
-			},
-			"response": [
-				{
-					"id": "7fea66c5-86a0-4c99-9e9d-9573ed082ba3",
-					"name": "GET Contact By Id",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"disabled": false
-							},
-							{
-								"key": "X-User-Email",
-								"value": "doamaral@apidoamaral.com",
-								"disabled": false
-							},
-							{
-								"key": "X-User-Token",
-								"value": "JsqFxnUz-Yg9z5iJszMM",
-								"disabled": false
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "contact[name]",
-									"value": "Lucas Amaral",
-									"description": "",
-									"type": "text"
-								},
-								{
-									"key": "contact[email]",
-									"value": "doamaral@gmail.com",
-									"description": "",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "localhost:3000/api/v1/contacts/5",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"contacts",
-								"5"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Cache-Control",
-							"value": "max-age=0, private, must-revalidate",
-							"name": "Cache-Control",
-							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8",
-							"name": "Content-Type",
-							"description": "The mime type of this content"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"8bea412c7b6d645f17c8bcdd76d81ee8\"",
-							"name": "ETag",
-							"description": "An identifier for a specific version of a resource, often a message digest"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked",
-							"name": "Transfer-Encoding",
-							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
-						},
-						{
-							"key": "Vary",
-							"value": "Origin",
-							"name": "Vary",
-							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
-						},
-						{
-							"key": "X-Request-Id",
-							"value": "5309f492-8fc2-4a1c-92e7-4e0dcaf1206c",
-							"name": "X-Request-Id",
-							"description": "Custom header"
-						},
-						{
-							"key": "X-Runtime",
-							"value": "0.443198",
-							"name": "X-Runtime",
-							"description": "Custom header"
-						}
-					],
-					"cookie": [
-						{
-							"expires": "Tue Jan 19 2038 00:14:07 GMT-0300 (Hora oficial do Brasil)",
-							"httpOnly": true,
-							"domain": "localhost",
-							"path": "/",
-							"secure": false,
-							"value": "c014OUZGREZlUTM0V3M5OTdpaStEbHV6OXE2RVJZK2tpT09KOUdNbUlNWS9ZU2RocFFibkxBYUxnczdNSXJuN2FZQ2xTQWwwaXhieWFNS0o3VHhXeWRvdm9ldlJZRDcrNmtLVWJMbEV3R3Nld0lOWUZRam5ReFowYi95cE8zbC9TU291SEo1VVY4VDdoRllJV3VYQXVnPT0tLUFpQk1HbjZrTWRsYnY4Z2pLTThwSUE9PQ%3D%3D--ac096458c2678ef32ce88977a168a3b9d93a9ede",
-							"key": "_agendarails_session"
-						}
-					],
-					"body": "{\"id\":5,\"name\":\"John Doe\",\"email\":\"jdoe@gmail.com\",\"phone\":\"+55 85 997596874\",\"description\":\"Complete contact\",\"user_id\":1,\"created_at\":\"2018-02-16T13:00:04.878Z\",\"updated_at\":\"2018-02-16T13:00:04.878Z\"}"
-				}
-			]
-		},
-		{
-			"name": "[PRD] GET Contact - Existing user",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "01a3c70a-649e-4a87-b274-0b06992a99f1",
-						"type": "text/javascript",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"",
-							"pm.test(\"Brings the correct User\", function () {",
-							"    var jsonData = pm.response.json();",
-							"    pm.expect(jsonData.id).to.eql(1);",
-							"});"
-						]
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					},
-					{
-						"key": "X-User-Email",
-						"value": "john@doe.com"
-					},
-					{
-						"key": "X-User-Token",
-						"value": "N7mm3ELMWJ-Gow9hRMXc"
-					}
-				],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "contact[name]",
-							"value": "Lucas Amaral",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "contact[email]",
-							"value": "doamaral@gmail.com",
-							"description": "",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "https://apimanerin.herokuapp.com/api/v1/contacts/1",
-					"protocol": "https",
-					"host": [
-						"apimanerin",
-						"herokuapp",
-						"com"
+						"{{URL}}"
 					],
 					"path": [
 						"api",
@@ -444,7 +255,7 @@
 			},
 			"response": [
 				{
-					"id": "a0676415-5d14-4695-9d23-dc0783a3d422",
+					"id": "45c53aa3-9aa3-443b-97f5-07942959841d",
 					"name": "GET Contact By Id",
 					"originalRequest": {
 						"method": "GET",
@@ -564,7 +375,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "e97f84a1-149c-4f61-8e28-efa47d409402",
+						"id": "d5a25210-d8cb-4296-9e29-445e2e5e99fb",
 						"type": "text/javascript",
 						"exec": [
 							"pm.test(\"response is ok\", function () {",
@@ -577,11 +388,6 @@
 							"",
 							"pm.test(\"response must be json\", function () {",
 							"    pm.response.to.be.json; // this assertion also checks if a body  exists, so the above check is not needed",
-							"});",
-							"",
-							"pm.test(\"number of registers\", function () {",
-							"    var jsonData = pm.response.json();",
-							"    pm.expect(jsonData.length).to.eql(5);",
 							"});"
 						]
 					}
@@ -596,11 +402,11 @@
 					},
 					{
 						"key": "X-User-Email",
-						"value": "john@doe.com"
+						"value": "{{EMAIL}}"
 					},
 					{
 						"key": "X-User-Token",
-						"value": "sEY2sTxSMRy_tB1RSJdV"
+						"value": "{{AUTH_TOKEN}}"
 					}
 				],
 				"body": {
@@ -621,11 +427,10 @@
 					]
 				},
 				"url": {
-					"raw": "localhost:3000/api/v1/contacts",
+					"raw": "{{URL}}/api/v1/contacts",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"v1",
@@ -663,11 +468,11 @@
 					},
 					{
 						"key": "X-User-Email",
-						"value": "john@doe.com"
+						"value": "{{EMAIL}}"
 					},
 					{
 						"key": "X-User-Token",
-						"value": "sEY2sTxSMRy_tB1RSJdV"
+						"value": "{{AUTH_TOKEN}}"
 					}
 				],
 				"body": {
@@ -700,11 +505,10 @@
 					]
 				},
 				"url": {
-					"raw": "localhost:3000/api/v1/contacts",
+					"raw": "{{URL}}/api/v1/contacts",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"v1",
@@ -726,20 +530,19 @@
 					},
 					{
 						"key": "X-User-Email",
-						"value": "doamaral@apidoamaral.com"
+						"value": "{{EMAIL}}"
 					},
 					{
 						"key": "X-User-Token",
-						"value": "JsqFxnUz-Yg9z5iJszMM"
+						"value": "{{AUTH_TOKEN}}"
 					}
 				],
 				"body": {},
 				"url": {
-					"raw": "localhost:3000/api/v1/contacts/3",
+					"raw": "{{URL}}/api/v1/contacts/3",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"v1",
