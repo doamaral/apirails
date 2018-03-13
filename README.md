@@ -22,4 +22,4 @@ _obs: when running in heroku, you don't need rake db:create_
 bundle lock --add-platform ruby
 bundle lock --add-platform x86_64-linux
 ```
-asdf
+asdfasd
